@@ -1,53 +1,143 @@
-# Getting Started with Create React App
+# 🎬 Moviedux
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Live Demo:** [https://GhantaParamita.github.io/Moviedux](https://GhantaParamita.github.io/Moviedux)
 
-## Available Scripts
+Find your next favorite movie! Moviedux is a React-powered movie discovery and watchlist application that helps you explore movies, check ratings, and keep track of films you want to watch.
 
-In the project directory, you can run:
+## ✨ Features
+
+- 🎥 Browse a curated collection of movies
+- ⭐ View movie ratings and genre information
+- 📋 Add/remove movies from your personal watchlist
+- 🎹 Responsive and intuitive UI
+- 📱 Works seamlessly on desktop and mobile devices
+- 🚀 Deployed on GitHub Pages for instant access
+
+## 🛠️ Technologies & Tools
+
+- **Framework:** React 18.2.0
+- **Routing:** React Router DOM 6.22.3
+- **Build Tool:** Create React App (react-scripts 5.0.1)
+- **Deployment:** GitHub Pages (gh-pages 6.3.0)
+- **Testing:** Jest & React Testing Library
+- **Performance:** Web Vitals
+
+## 📁 Project Structure
+
+```
+src/
+├── components/
+│   ├── Header.js          # App header with logo
+│   ├── Footer.js          # App footer
+│   ├── MovieCard.js       # Individual movie card
+│   ├── MoviesGrid.js      # Grid of movies
+│   └── Watchlist.js       # Watchlist page
+├── App.js                 # Main app component
+├── App.css                # App styles
+├── styles.css             # Global styles
+└── index.js               # Entry point
+
+public/
+├── images/                # Movie poster images
+├── movies.json            # Movie data
+└── index.html             # HTML template
+```
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v14 or higher)
+- npm
+
+### Installation & Setup
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/GhantaParamita/Moviedux.git
+   cd Moviedux
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+
+   ```bash
+   npm start
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the app.
+
+## 📝 Available Scripts
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Runs the app in development mode. The page reloads when you make changes.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the test runner in interactive watch mode.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Builds the app for production to the `build` folder with optimizations.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `npm run deploy`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Deploys the app to GitHub Pages. Run this to update the live site.
 
 ### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Note:** This is a one-way operation. Use only if you need full control over configuration.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🌐 Deployment
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+This project is deployed on GitHub Pages. To deploy your own version:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Update the `homepage` URL in `package.json` to your GitHub Pages URL
+2. Run:
+   ```bash
+   npm run build
+   npm run deploy
+   ```
 
-## Learn More
+## 📊 Data Source
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Movie data is stored in `public/movies.json` and includes:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Movie ID, title, genre, release year
+- Movie poster images
+- Rating information
 
-### Code Splitting
+## 🎨 Customization
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Edit movie data in `public/movies.json`
+- Add/update movie images in `public/images/`
+- Modify styles in `src/App.css` and `src/styles.css`
+- Add new components in `src/components/`
+
+## 🤝 Contributing
+
+Feel free to fork this project and submit pull requests for improvements.
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+## 👤 Author
+
+**Paramita Ghanta**
+
+- GitHub: [GhantaParamita](https://github.com/GhantaParamita)
+
+---
+
+Enjoy discovering your next favorite movie! 🍿🎬
 
 ### Analyzing the Bundle Size
 
